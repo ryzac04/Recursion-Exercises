@@ -34,13 +34,13 @@ function isPalindrome(str, index = 0) {
   let rightIdx = str.length - index - 1;
   if (leftIdx >= rightIdx) return true;
   if (str[leftIdx] !== str[rightIdx]) return false;
-  return isPalindrome(str, idx + 1);
+  return isPalindrome(str, index + 1);
 }
 
 /** findIndex: return the index of val in arr (or -1 if val is not present). */
 
 function findIndex(arr, val, index = 0) {
-  if (idx === arr.length) return -1;
+  if (index === arr.length) return -1;
   if (arr[index] === val) return index;
   return findIndex(arr, val, index + 1);
 }
